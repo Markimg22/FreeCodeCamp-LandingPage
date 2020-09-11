@@ -1,0 +1,230 @@
+body
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* HEADER */
+
+header, footer
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    padding: 1rem;
+
+    background-color: rgba(102, 102, 102, 0.1);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+#header-img
+{
+    max-width: 100%;
+    width: 30rem;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: column;
+}
+
+ul
+{
+    display: flex;
+    flex-direction: row;
+}
+
+li
+{
+    list-style: none;
+    margin-left: 0.5rem;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+}
+
+a:hover
+{
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* FORM */
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    margin: 3rem auto;
+    font-weight: bold;
+}
+
+label, #email, #submit
+{
+    margin-bottom: 0.2rem;
+}
+
+input
+{
+    padding: 0.5rem;
+}
+
+hr
+{
+    background-color: black;
+    margin: 0;
+    height: 0.1rem;
+}
+
+.btn
+{
+    max-width: 10rem;
+    text-decoration: none;
+    border: none;
+    background-color: yellowgreen;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover
+{
+    opacity: 80%;
+    cursor: pointer;
+}
+
+/* FEATURES */
+
+.grid
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    text-align: justify;
+    margin: 3rem auto;
+}
+
+.grid h2, p
+{
+    margin: 0;
+}
+
+.grid h2
+{
+    opacity: 70%;
+}
+
+/* HOW IT WORKS */
+
+#how-it-works
+{
+    text-align: center;
+}
+
+#video
+{
+    width: 60%;
+    height: 60vh;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    border-radius: 0.4rem;
+    margin: 3rem auto;
+}
+
+/* PRICING */
+
+#pricing
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem auto;
+}
+
+.product
+{
+    text-align: center;
+    width: 20%;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    margin: auto 1rem;
+    padding: 0.5rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.name-product
+{
+    font-weight: bold;
+    font-size: 1.5rem;
+    opacity: 70%;
+    text-transform: uppercase;
+}
+
+h2
+{
+    color: rgb(41, 136, 32);
+}
+
+ol
+{
+    padding: 0;
+}
+
+
+/* FOOTER */
+
+footer
+{
+    margin-bottom: 0;
+    justify-content: space-between;
+    box-shadow: 1px 1px 8px rgba( 0, 0, 0, 0.5 );
+}
+
+/* MEDIA */
+@media( max-width: 900px )
+{
+    header
+    {
+        justify-content: left;
+        flex-direction: column;
+    }
+    
+    .grid
+    {
+        width: 97%;
+        justify-content: left;
+        margin-left: 0.5rem;
+    }
+    
+    #video
+    {
+        width: 70%;
+    }
+}
+
+@media( max-width: 650px )
+{
+    #pricing
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product
+    {
+        width: 50%;
+        margin: 1rem;
+    }
+}
